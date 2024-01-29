@@ -3,7 +3,7 @@
     height: 24px;
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;    
     display: inline-block;
 }
 
@@ -28,9 +28,10 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
@@ -41,5 +42,13 @@
 }
 
 .lista-menu__titulo {
-    color: var(--laranja); 
+    color: var(--laranja);
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
